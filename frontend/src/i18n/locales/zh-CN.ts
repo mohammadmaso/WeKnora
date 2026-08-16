@@ -2255,6 +2255,7 @@ export default {
     close: '关闭设置'
   },
   language: {
+    faIR: 'فارسی',
     zhCN: '简体中文',
     enUS: 'English',
     ruRU: 'Русский',

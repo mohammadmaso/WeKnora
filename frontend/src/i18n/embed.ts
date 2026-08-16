@@ -1202,7 +1202,7 @@ const ruEmbedPublish = {
   },
 } as const
 
-const SUPPORTED_LOCALES = ['zh-CN', 'en-US', 'ko-KR', 'ru-RU'] as const
+const SUPPORTED_LOCALES = ['fa-IR', 'zh-CN', 'en-US', 'ko-KR', 'ru-RU'] as const
 export type EmbedLocale = (typeof SUPPORTED_LOCALES)[number]
 
 /** Isolated from the main app `locale` key so embed preview never hijacks admin UI language. */
@@ -1211,12 +1211,13 @@ export const EMBED_LOCALE_STORAGE_KEY = 'weknora-embed-locale'
 /** Map host-provided locale strings to a supported embed locale tag. */
 export function normalizeEmbedLocale(raw: string): EmbedLocale {
   const s = raw.trim().toLowerCase()
+  if (s.startsWith('fa')) return 'fa-IR'
   if (s.startsWith('en')) return 'en-US'
   if (s.startsWith('ko')) return 'ko-KR'
   if (s.startsWith('ru')) return 'ru-RU'
   if (s.startsWith('zh')) return 'zh-CN'
   const exact = SUPPORTED_LOCALES.find((l) => l.toLowerCase() === s)
-  return exact || 'zh-CN'
+  return exact || 'fa-IR'
 }
 
 export function readEmbedLocaleFromUrl(): string {
@@ -1226,7 +1227,7 @@ export function readEmbedLocaleFromUrl(): string {
 
 function resolveBrowserEmbedLocale(): EmbedLocale {
   const nav = typeof navigator !== 'undefined' ? navigator.language : ''
-  return nav ? normalizeEmbedLocale(nav) : 'zh-CN'
+  return nav ? normalizeEmbedLocale(nav) : 'fa-IR'
 }
 
 function resolveInitialEmbedLocale(): EmbedLocale {
@@ -1254,6 +1255,7 @@ const i18n = createI18n({
   globalInjection: true,
   warnHtmlMessage: false,
   messages: {
+    'fa-IR': messages['en-US'],
     'zh-CN': messages['zh-CN'],
     'en-US': messages['en-US'],
     'ko-KR': deepMerge(messages['en-US'], koEmbedPublish),

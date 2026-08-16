@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <title>WeKnora</title>
     <meta charset="utf-8">
@@ -17,6 +17,9 @@
 <body>
 <script>
 (function(){
+  var loc=localStorage.getItem('locale')||'fa-IR';
+  document.documentElement.setAttribute('dir',loc==='fa-IR'?'rtl':'ltr');
+  document.documentElement.setAttribute('lang',loc==='fa-IR'?'fa':(loc.split('-')[0]||'en'));
   var t=localStorage.getItem('WeKnora_theme')||'light';
   if(t==='system')t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
   document.documentElement.setAttribute('theme-mode',t);

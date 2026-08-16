@@ -3,9 +3,12 @@ import zhCN from './locales/zh-CN.ts'
 import ruRU from './locales/ru-RU.ts'
 import enUS from './locales/en-US.ts'
 import koKR from './locales/ko-KR.ts'
-import { BUILT_IN_DEFAULT, resolveDefaultLocale } from './resolveDefaultLocale.ts'
+import faIR from './locales/fa-IR.ts'
+import { applyDocumentLocale } from './documentLocale.ts'
+import { resolveDefaultLocale } from './resolveDefaultLocale.ts'
 
 const messages = {
+  'fa-IR': faIR,
   'zh-CN': zhCN,
   'en-US': enUS,
   'ru-RU': ruRU,
@@ -18,10 +21,12 @@ const savedLocale = localStorage.getItem('locale') || resolveDefaultLocale(
   import.meta.env.VITE_DEFAULT_LOCALE,
 )
 
+applyDocumentLocale(savedLocale)
+
 const i18n = createI18n({
   legacy: false,
   locale: savedLocale,
-  fallbackLocale: BUILT_IN_DEFAULT,
+  fallbackLocale: 'en-US',
   globalInjection: true,
   // Some translations intentionally embed `<strong>` markup (e.g. agent step summaries).
   // We render them via v-html with our own sanitization, so silence vue-i18n's HTML warning

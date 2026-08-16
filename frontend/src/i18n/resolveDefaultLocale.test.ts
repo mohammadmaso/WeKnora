@@ -3,8 +3,16 @@ import { test } from 'node:test'
 
 import { BUILT_IN_DEFAULT, resolveDefaultLocale } from './resolveDefaultLocale.ts'
 
+test('built-in default is Persian', () => {
+  assert.equal(BUILT_IN_DEFAULT, 'fa-IR')
+})
+
 test('resolveDefaultLocale prefers runtime over build-time default', () => {
   assert.equal(resolveDefaultLocale('en-US', 'ru-RU'), 'en-US')
+})
+
+test('resolveDefaultLocale accepts fa-IR', () => {
+  assert.equal(resolveDefaultLocale('fa-IR'), 'fa-IR')
 })
 
 test('resolveDefaultLocale falls back to build-time then built-in default', () => {

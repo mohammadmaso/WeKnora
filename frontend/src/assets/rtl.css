@@ -1,0 +1,9 @@
+/* Physical-position fixes that `dir=rtl` does not flip on its own. */
+html[dir="rtl"] .sidebar-drag-handle {
+  right: auto;
+  left: -3px;
+}
+
+html[dir="rtl"] .font-preview {
+  text-align: right;
+}

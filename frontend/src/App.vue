@@ -12,6 +12,7 @@ import { consumePendingTenantSwitchToast } from '@/utils/tenantSwitch'
 import { useRoleLabel } from '@/composables/useRoleLabel'
 import { notifyLoginSuccess } from '@/utils/loginNotify'
 import { renderWorkspaceNotifyContent } from '@/utils/workspaceNotifyContent'
+import { applyDocumentLocale } from '@/i18n/documentLocale'
 
 // TDesign locale configs
 import enUSConfig from 'tdesign-vue-next/esm/locale/en_US'
@@ -33,6 +34,8 @@ const tdLocaleMap: Record<string, object> = {
 }
 
 const tdGlobalConfig = computed(() => tdLocaleMap[locale.value] || enUSConfig)
+
+watch(locale, (next) => applyDocumentLocale(next), { immediate: true })
 
 const decodeOIDCResult = (encoded: string) => {
   const normalized = encoded.replace(/-/g, '+').replace(/_/g, '/')

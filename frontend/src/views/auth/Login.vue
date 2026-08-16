@@ -95,10 +95,10 @@
       </svg>
     </div>
 
-    <!-- Logo - Top Left -->
-    <a href="https://github.com/Tencent/WeKnora" target="_blank" class="header-logo" :title="$t('common.github')">
-      <img src="@/assets/img/weknora.png" alt="WeKnora" class="logo-image" />
-    </a>
+    <!-- Logo -->
+    <div class="header-logo">
+      <img src="/logo.png" alt="" class="logo-image" />
+    </div>
 
     <!-- Header Links - Top Right -->
     <div class="header-links">
@@ -432,6 +432,7 @@ const inviteLookupLoading = ref(false)
 
 // Language options
 const languageOptions = [
+  { value: 'fa-IR', label: 'فارسی', shortLabel: 'فا', flag: '🇮🇷' },
   { value: 'zh-CN', label: '简体中文', shortLabel: '中文', flag: '🇨🇳' },
   { value: 'en-US', label: 'English', shortLabel: 'EN', flag: '🇺🇸' },
   { value: 'ru-RU', label: 'Русский', shortLabel: 'RU', flag: '🇷🇺' },
@@ -1202,20 +1203,21 @@ onMounted(async () => {
 .header-logo {
   position: fixed;
   top: 32px;
-  left: 50px;
+  inset-inline-start: 50px;
   z-index: 100;
-  cursor: pointer;
 
   .logo-image {
-    width: 120px;
-    height: auto;
+    height: 40px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
   }
 }
 
 .header-links {
   position: fixed;
   top: 28px;
-  right: 28px;
+  inset-inline-end: 28px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1283,7 +1285,7 @@ onMounted(async () => {
 .language-dropdown {
   position: absolute;
   top: calc(100% + 8px);
-  right: 0;
+  inset-inline-end: 0;
   min-width: 160px;
   background: rgba(255, 255, 255, 0.97);
   border: 1px solid var(--td-component-stroke);
@@ -1656,16 +1658,16 @@ onMounted(async () => {
 
   .header-logo {
     top: 26px;
-    left: 40px;
+    inset-inline-start: 40px;
 
     .logo-image {
-      width: 100px;
+      height: 34px;
     }
   }
 
   .header-links {
     top: 22px;
-    right: 22px;
+    inset-inline-end: 22px;
     gap: 8px;
 
     .link-text {
@@ -1704,10 +1706,10 @@ onMounted(async () => {
 
   .header-logo {
     top: 22px;
-    left: 30px;
+    inset-inline-start: 30px;
 
     .logo-image {
-      width: 80px;
+      height: 30px;
     }
   }
 
@@ -1731,7 +1733,7 @@ onMounted(async () => {
 
   .header-links {
     top: 18px;
-    right: 18px;
+    inset-inline-end: 18px;
     gap: 8px;
 
     .link-text {
@@ -1764,10 +1766,10 @@ onMounted(async () => {
 
   .header-logo {
     top: 18px;
-    left: 20px;
+    inset-inline-start: 20px;
 
     .logo-image {
-      width: 70px;
+      height: 26px;
     }
   }
 
@@ -1786,7 +1788,7 @@ onMounted(async () => {
 
   .header-links {
     top: 14px;
-    right: 14px;
+    inset-inline-end: 14px;
     gap: 6px;
     flex-wrap: wrap;
 
@@ -1833,10 +1835,6 @@ html[theme-mode="dark"] {
 
   .connection-line {
     stroke: rgba(255, 255, 255, 0.25);
-  }
-
-  .header-logo .logo-image {
-    filter: invert(1) hue-rotate(180deg) brightness(1.1);
   }
 
   .header-link {
