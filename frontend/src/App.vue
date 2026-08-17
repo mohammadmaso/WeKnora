@@ -35,7 +35,10 @@ const tdLocaleMap: Record<string, object> = {
 
 const tdGlobalConfig = computed(() => tdLocaleMap[locale.value] || enUSConfig)
 
-watch(locale, (next) => applyDocumentLocale(next), { immediate: true })
+watch(locale, (next) => {
+  applyDocumentLocale(next)
+  document.title = t('common.productName')
+}, { immediate: true })
 
 const decodeOIDCResult = (encoded: string) => {
   const normalized = encoded.replace(/-/g, '+').replace(/_/g, '/')

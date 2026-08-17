@@ -3,7 +3,7 @@
         <!-- 展开时：Logo + 搜索/折叠按钮同行 -->
         <div class="logo_row" v-if="!uiStore.sidebarCollapsed">
             <div class="logo_box" @click="router.push('/platform/knowledge-bases')" style="cursor: pointer;">
-                <img class="logo" src="/logo.png" alt="">
+                <img class="logo" src="/logo.png" :alt="t('common.productName')">
                 <sup v-if="isLiteEdition" class="lite-badge">Lite</sup>
             </div>
             <div class="logo_actions">
@@ -1279,6 +1279,16 @@ const onDragHandleMouseDown = (e: MouseEvent) => {
             width: auto;
             max-width: 168px;
             object-fit: contain;
+            box-sizing: border-box;
+            padding: 4px 10px;
+            border-radius: 9px;
+            background:
+                linear-gradient(165deg, rgba(255, 255, 255, 0.08), transparent 42%),
+                linear-gradient(180deg, #2a2f3d 0%, #12141a 100%);
+            box-shadow:
+                0 1px 2px rgba(10, 12, 18, 0.22),
+                0 0 0 1px rgba(255, 255, 255, 0.06),
+                inset 0 1px 0 rgba(255, 255, 255, 0.12);
         }
 
         .lite-badge {
