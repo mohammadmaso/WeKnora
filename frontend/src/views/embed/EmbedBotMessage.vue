@@ -218,7 +218,7 @@ onMounted(() => {
   border-radius: 4px;
   color: var(--td-text-color-primary);
   font-size: 16px;
-  margin-right: auto;
+  margin-inline-end: auto;
   max-width: 100%;
   box-sizing: border-box;
 

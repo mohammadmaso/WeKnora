@@ -2746,7 +2746,7 @@ async function createNewSession(value: string): Promise<void> {
 }
 
 .tag-more-popup .tag-menu-item .menu-icon {
-  margin-right: 8px;
+  margin-inline-end: 8px;
   font-size: 16px;
 }
 
@@ -2759,7 +2759,7 @@ async function createNewSession(value: string): Promise<void> {
 .knowledge-layout {
   display: flex;
   flex-direction: column;
-  margin: 0 16px 0 4px;
+  margin-block-start: 0; margin-inline-end: 16px; margin-block-end: 0; margin-inline-start: 4px;
   gap: 20px;
   height: 100%;
   flex: 1;
@@ -2883,7 +2883,7 @@ async function createNewSession(value: string): Promise<void> {
     }
 
     :deep(.t-input__prefix-icon) {
-      margin-right: 0;
+      margin-inline-end: 0;
     }
   }
 
@@ -2982,7 +2982,7 @@ async function createNewSession(value: string): Promise<void> {
 
     &::before {
       content: '·';
-      margin-right: 2px;
+      margin-inline-end: 2px;
       opacity: 0.65;
     }
   }
@@ -3075,7 +3075,7 @@ async function createNewSession(value: string): Promise<void> {
     justify-content: center;
     width: 24px;
     height: 24px;
-    margin-right: 4px;
+    margin-inline-end: 4px;
     padding: 0;
     border: 1px solid var(--td-component-border);
     border-radius: 6px;
@@ -3239,7 +3239,7 @@ async function createNewSession(value: string): Promise<void> {
       flex-shrink: 0;
       display: inline-flex;
       align-items: center;
-      margin-right: var(--td-comp-margin-s);
+      margin-inline-end: var(--td-comp-margin-s);
       color: var(--td-text-color-placeholder);
     }
 
@@ -3256,10 +3256,10 @@ async function createNewSession(value: string): Promise<void> {
       flex-shrink: 0;
       display: inline-flex;
       align-items: center;
-      margin-left: var(--td-comp-margin-s);
+      margin-inline-start: var(--td-comp-margin-s);
 
       :deep(.t-input__suffix) {
-        margin-left: 0;
+        margin-inline-start: 0;
       }
 
       :deep(.t-input__suffix-clear) {
@@ -3467,7 +3467,7 @@ async function createNewSession(value: string): Promise<void> {
     align-items: center;
     gap: 6px;
     flex-shrink: 0;
-    margin-left: 4px;
+    margin-inline-start: 4px;
   }
 
   .document-breadcrumb {
@@ -3574,7 +3574,7 @@ async function createNewSession(value: string): Promise<void> {
 
     .parser-hint-link {
       color: var(--td-brand-color);
-      margin-left: 2px;
+      margin-inline-start: 2px;
       white-space: nowrap;
     }
   }
@@ -3605,7 +3605,7 @@ async function createNewSession(value: string): Promise<void> {
 
     .warning-link {
       color: var(--td-brand-color);
-      margin-left: 2px;
+      margin-inline-start: 2px;
       white-space: nowrap;
     }
   }
@@ -3762,7 +3762,7 @@ async function createNewSession(value: string): Promise<void> {
   min-height: 0;
   padding: 24px 32px;
   overflow-y: auto;
-  margin: 0 16px 0 4px;
+  margin-block-start: 0; margin-inline-end: 16px; margin-block-end: 0; margin-inline-start: 4px;
 }
 
 @media (max-width: 1250px) and (min-width: 1045px) {
@@ -4088,7 +4088,7 @@ async function createNewSession(value: string): Promise<void> {
     justify-content: center;
     width: 22px;
     height: 29px;
-    margin-right: 8px;
+    margin-inline-end: 8px;
     cursor: pointer;
 
     .card-select-checkbox {
@@ -4143,7 +4143,7 @@ async function createNewSession(value: string): Promise<void> {
     color: var(--td-brand-color);
     font-family: var(--app-font-family);
     font-size: 11px;
-    margin-left: 8px;
+    margin-inline-start: 8px;
   }
 
   // In-flight / failed: only status text + trace icon open the drawer.
@@ -4215,7 +4215,7 @@ async function createNewSession(value: string): Promise<void> {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.01em;
-    margin-right: 8px;
+    margin-inline-end: 8px;
   }
 
   .more-wrap {
@@ -4509,7 +4509,7 @@ async function createNewSession(value: string): Promise<void> {
   }
 
   .svg-icon-download {
-    margin-right: 8px;
+    margin-inline-end: 8px;
   }
 }
 

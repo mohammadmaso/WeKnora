@@ -352,7 +352,7 @@ const getWebSearchDisplayText = (item) => {
 .refer-title-icon {
     width: 16px;
     height: 16px;
-    margin-right: 8px;
+    margin-inline-end: 8px;
     flex-shrink: 0;
     color: var(--embed-primary, var(--td-brand-color));
 }
@@ -409,13 +409,13 @@ const getWebSearchDisplayText = (item) => {
         .doc-group-arrow {
             color: var(--td-text-color-placeholder);
             flex-shrink: 0;
-            margin-left: 4px;
+            margin-inline-start: 4px;
         }
 
         .doc-group-icon {
             color: var(--td-brand-color);
             flex-shrink: 0;
-            margin-right: 6px;
+            margin-inline-end: 6px;
         }
 
         .doc-group-title {
@@ -430,14 +430,14 @@ const getWebSearchDisplayText = (item) => {
         .doc-group-count {
             color: var(--td-text-color-placeholder);
             font-size: 11px;
-            margin-left: 6px;
+            margin-inline-start: 6px;
             white-space: nowrap;
             flex-shrink: 0;
         }
 
         .doc-group-actions {
             flex-shrink: 0;
-            margin-left: 8px;
+            margin-inline-start: 8px;
         }
 
         .doc-group-navigate {
@@ -485,7 +485,7 @@ const getWebSearchDisplayText = (item) => {
         .doc-chunk-index {
             color: var(--td-text-color-placeholder);
             font-size: 11px;
-            margin-right: 4px;
+            margin-inline-end: 4px;
         }
     }
 }

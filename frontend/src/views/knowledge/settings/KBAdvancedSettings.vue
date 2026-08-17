@@ -313,7 +313,7 @@ const handleQuestionGenerationChange = () => {
 
 .required {
   color: var(--td-error-color);
-  margin-left: 2px;
+  margin-inline-start: 2px;
   font-weight: 500;
 }
 

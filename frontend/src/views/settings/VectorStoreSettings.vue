@@ -1104,7 +1104,7 @@ onMounted(async () => {
   &.required::before {
     content: '*';
     color: var(--td-error-color);
-    margin-right: 4px;
+    margin-inline-end: 4px;
     font-weight: 500;
     line-height: 1;
   }

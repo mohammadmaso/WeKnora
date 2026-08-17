@@ -106,7 +106,7 @@ const props = defineProps<Props>();
   }
   
   .sparkle {
-    margin-left: 3px;
+    margin-inline-start: 3px;
     font-size: 11px;
   }
 }

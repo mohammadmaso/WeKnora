@@ -175,7 +175,7 @@ const memoryKindLabel = (kind: string) => {
 
 .memory-forget {
   flex: 0 0 auto;
-  margin-left: auto;
+  margin-inline-start: auto;
   padding: 0;
   border: 0;
   outline: none;

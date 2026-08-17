@@ -43,7 +43,7 @@
                 :disabled="!opt.allowed"
               />
             </t-select>
-            <span v-if="saveMessage && !drawerVisible" :class="['save-msg', saveSuccess ? 'success' : 'error']" style="margin-left: 12px;">
+            <span v-if="saveMessage && !drawerVisible" :class="['save-msg', saveSuccess ? 'success' : 'error']" style="margin-inline-start: 12px;">
               {{ saveMessage }}
             </span>
           </div>
@@ -1433,7 +1433,7 @@ onMounted(loadAll)
   &.required::before {
     content: '*';
     color: var(--td-error-color);
-    margin-right: 4px;
+    margin-inline-end: 4px;
     font-weight: 500;
     line-height: 1;
   }
@@ -1606,7 +1606,7 @@ onMounted(loadAll)
   }
 
   &--inline {
-    margin-left: 6px;
+    margin-inline-start: 6px;
     font-size: 12px;
     font-weight: 500;
     vertical-align: baseline;

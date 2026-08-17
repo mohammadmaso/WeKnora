@@ -7,3 +7,69 @@ html[dir="rtl"] .sidebar-drag-handle {
 html[dir="rtl"] .font-preview {
   text-align: right;
 }
+
+/*
+ * Icon beside text: TDesign (and similar) use physical margin-left/right
+ * for the gap. Those stick to the viewport sides in RTL, so the gap lands
+ * on the outer side of the icon instead of between icon and label.
+ * margin-inline-* follows the reading direction.
+ */
+html[dir="rtl"] .t-button svg + .t-button__text:not(:empty),
+html[dir="rtl"] .t-button .t-loading + .t-button__text:not(:empty),
+html[dir="rtl"] .t-button .t-button__suffix:not(:empty) {
+  margin-left: 0;
+  margin-inline-start: var(--td-spacer, 8px);
+}
+
+html[dir="rtl"] .t-link .t-icon:not(:last-child) {
+  margin-right: 0;
+  margin-inline-end: var(--td-spacer, 8px);
+}
+
+html[dir="rtl"] .t-tag .t-icon,
+html[dir="rtl"] .t-alert__icon,
+html[dir="rtl"] .t-message .t-icon,
+html[dir="rtl"] .t-notification__icon,
+html[dir="rtl"] .t-dialog__header-icon,
+html[dir="rtl"] .t-popconfirm__icon,
+html[dir="rtl"] .t-popconfirm .t-icon {
+  margin-right: 0;
+  margin-inline-end: var(--td-comp-margin-s, 8px);
+}
+
+html[dir="rtl"] .t-dropdown__item .t-icon,
+html[dir="rtl"] .t-dropdown__item-icon {
+  margin-right: 0;
+  margin-inline-end: 8px;
+}
+
+html[dir="rtl"] .t-tabs__nav-item .t-icon,
+html[dir="rtl"] .t-menu__item .t-icon:not(:last-child),
+html[dir="rtl"] .t-submenu__icon,
+html[dir="rtl"] .t-breadcrumb__inner .t-icon,
+html[dir="rtl"] .t-empty .t-icon,
+html[dir="rtl"] .t-result__icon,
+html[dir="rtl"] .t-steps-item__icon,
+html[dir="rtl"] .t-timeline-item__icon,
+html[dir="rtl"] .t-collapse-panel__header .t-icon,
+html[dir="rtl"] .t-tree__icon,
+html[dir="rtl"] .t-upload .t-icon:not(:last-child),
+html[dir="rtl"] .t-list-item .t-icon:not(:last-child),
+html[dir="rtl"] .t-card__title .t-icon,
+html[dir="rtl"] .t-drawer__header .t-icon,
+html[dir="rtl"] .t-form__label .t-icon,
+html[dir="rtl"] .t-checkbox .t-icon,
+html[dir="rtl"] .t-radio .t-icon,
+html[dir="rtl"] .t-input__prefix .t-icon,
+html[dir="rtl"] .t-select__prefix .t-icon,
+html[dir="rtl"] .t-guide .t-icon {
+  margin-right: 0;
+  margin-inline-end: var(--td-comp-margin-s, 8px);
+}
+
+html[dir="rtl"] .t-input__suffix .t-icon,
+html[dir="rtl"] .t-select__suffix .t-icon,
+html[dir="rtl"] .t-link .t-icon:last-child:not(:only-child) {
+  margin-left: 0;
+  margin-inline-start: var(--td-spacer, 8px);
+}

@@ -1478,7 +1478,7 @@ const processConfigLines = computed<string[]>(() => {
               <t-button v-if="data?.parse_status === 'failed'" size="small" theme="primary" variant="outline"
                 @click="onRetry">
                 <t-icon name="refresh" size="14px" />
-                <span style="margin-left: 4px">{{ t('knowledgeStages.retry') }}</span>
+                <span style="margin-inline-start: 4px">{{ t('knowledgeStages.retry') }}</span>
               </t-button>
               <button v-if="showClose" type="button" class="kp-icon-btn" :aria-label="t('knowledgeStages.close')"
                 :title="t('knowledgeStages.close')" @click="emit('close')">
@@ -1955,7 +1955,7 @@ const processConfigLines = computed<string[]>(() => {
   align-items: center;
   gap: 4px;
   flex-shrink: 0;
-  margin-left: auto;
+  margin-inline-start: auto;
 }
 
 .kp-head-meta {
@@ -2160,7 +2160,7 @@ const processConfigLines = computed<string[]>(() => {
 .kp-ruler-track {
   position: relative;
   height: 100%;
-  margin-right: 16px;
+  margin-inline-end: 16px;
 }
 
 .kp-tick {
@@ -2328,7 +2328,7 @@ const processConfigLines = computed<string[]>(() => {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: var(--td-text-color-placeholder);
-  margin-left: auto;
+  margin-inline-start: auto;
   padding-left: 8px;
   flex-shrink: 0;
 }
@@ -2351,7 +2351,7 @@ const processConfigLines = computed<string[]>(() => {
 .kp-cell-bar {
   position: relative;
   height: 32px;
-  margin-right: 16px;
+  margin-inline-end: 16px;
 }
 
 /* Vertical "now" cursor — animates left during polling so the user can
@@ -2695,7 +2695,7 @@ const processConfigLines = computed<string[]>(() => {
   color: var(--td-text-color-anti);
   padding: 1px 6px;
   border-radius: var(--td-radius-small);
-  margin-left: auto;
+  margin-inline-start: auto;
 }
 
 .kp-last-error-suggestion {
@@ -3029,7 +3029,7 @@ const processConfigLines = computed<string[]>(() => {
 
 .kp-kv-tag-live {
   display: inline-block;
-  margin-left: 6px;
+  margin-inline-start: 6px;
   padding: 0 6px;
   font-size: 9px;
   font-weight: 600;
@@ -3215,7 +3215,7 @@ const processConfigLines = computed<string[]>(() => {
 }
 
 .kp-error-code {
-  margin-left: auto;
+  margin-inline-start: auto;
   font-size: 10px;
   background: var(--td-error-color);
   color: var(--td-text-color-anti);

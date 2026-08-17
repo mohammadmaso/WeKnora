@@ -1237,7 +1237,7 @@ onUnmounted(() => {
   &.required::after {
     content: '*';
     color: var(--td-error-color);
-    margin-left: 4px;
+    margin-inline-start: 4px;
   }
 }
 
@@ -1267,7 +1267,7 @@ onUnmounted(() => {
   color: var(--td-text-color-placeholder);
 
   .doc-link {
-    margin-left: 4px;
+    margin-inline-start: 4px;
     color: var(--td-brand-color);
   }
 }

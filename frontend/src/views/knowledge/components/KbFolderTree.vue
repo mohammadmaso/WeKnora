@@ -246,14 +246,14 @@ watch(
   width: 268px;
   min-height: 0;
   padding-right: 12px;
-  margin-right: 12px;
+  margin-inline-end: 12px;
   border-right: 1px solid var(--td-component-stroke);
   box-sizing: border-box;
 
   &.is-collapsed {
     width: auto;
     padding-right: 8px;
-    margin-right: 8px;
+    margin-inline-end: 8px;
   }
 }
 
@@ -404,7 +404,7 @@ watch(
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 2px;
+  margin-inline-start: 2px;
 }
 
 .kb-folder-row__count {

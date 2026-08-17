@@ -494,7 +494,7 @@ watch(searchQuery, (newVal, oldVal) => {
   }
 
   :deep(.t-input__prefix-icon) {
-    margin-right: 0;
+    margin-inline-end: 0;
   }
 }
 

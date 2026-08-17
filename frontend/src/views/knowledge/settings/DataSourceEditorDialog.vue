@@ -2051,7 +2051,7 @@ const drawerConfirmText = computed(() => {
   display: inline-block;
   font-size: 11px;
   padding: 1px 5px;
-  margin: 2px 4px 2px 0;
+  margin-block-start: 2px; margin-inline-end: 4px; margin-block-end: 2px; margin-inline-start: 0;
   border-radius: 3px;
   background: var(--td-bg-color-container);
   color: var(--td-text-color-secondary);
@@ -2188,7 +2188,7 @@ const drawerConfirmText = computed(() => {
   &.required::before {
     content: '*';
     color: var(--td-error-color);
-    margin-right: 4px;
+    margin-inline-end: 4px;
     font-weight: 500;
     line-height: 1;
   }

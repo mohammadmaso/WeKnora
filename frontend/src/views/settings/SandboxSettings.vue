@@ -918,7 +918,7 @@ onMounted(load)
 }
 
 .legacy-tag {
-  margin-left: 6px;
+  margin-inline-start: 6px;
   vertical-align: middle;
 }
 

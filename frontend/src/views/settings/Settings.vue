@@ -756,7 +756,7 @@ onUnmounted(() => {
 }
 
 .nav-icon {
-  margin-right: 9px;
+  margin-inline-end: 9px;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -775,14 +775,14 @@ onUnmounted(() => {
 }
 
 .expand-icon {
-  margin-left: 4px;
+  margin-inline-start: 4px;
   font-size: 14px;
   transition: transform 0.2s ease;
 }
 
 /* 子菜单 */
 .submenu {
-  margin-left: 28px;
+  margin-inline-start: 28px;
   margin-bottom: 3px;
   overflow: hidden;
 }

@@ -955,7 +955,7 @@ onBeforeUnmount(() => {
 
   &.required::after {
     content: '*';
-    margin-left: 4px;
+    margin-inline-start: 4px;
     color: var(--td-error-color);
   }
 }
@@ -1056,7 +1056,7 @@ onBeforeUnmount(() => {
   }
 
   :deep(.t-button__icon) {
-    margin-right: 5px;
+    margin-inline-end: 5px;
     font-size: 15px;
   }
 }

@@ -197,14 +197,14 @@ const handleAddModel = (subSection: string) => {
 
     .required {
       color: var(--td-error-color);
-      margin-left: 2px;
+      margin-inline-start: 2px;
     }
 
     .optional {
       color: var(--td-text-color-placeholder);
       font-size: 12px;
       font-weight: 400;
-      margin-left: 4px;
+      margin-inline-start: 4px;
     }
   }
 

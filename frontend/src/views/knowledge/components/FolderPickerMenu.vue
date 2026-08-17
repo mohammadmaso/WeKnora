@@ -339,7 +339,7 @@ const commitNewFolder = async () => {
   justify-content: center;
   width: 22px;
   height: 22px;
-  margin-right: -2px;
+  margin-inline-end: -2px;
   padding: 0;
   border: 0;
   border-radius: 4px;

@@ -1196,7 +1196,7 @@ const handleClose = () => {
   &.required::before {
     content: '*';
     color: var(--td-error-color);
-    margin-right: 4px;
+    margin-inline-end: 4px;
     font-weight: 500;
     line-height: 1;
   }
@@ -1326,7 +1326,7 @@ const handleClose = () => {
   display: inline-flex;
   align-items: center;
   padding: 0 6px;
-  margin-left: 6px;
+  margin-inline-start: 6px;
   height: 16px;
   font-size: 10px;
   font-weight: 500;

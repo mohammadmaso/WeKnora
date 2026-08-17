@@ -1211,7 +1211,7 @@ const onDragHandleMouseDown = (e: MouseEvent) => {
             }
 
             .menu_icon {
-                margin-right: 0;
+                margin-inline-end: 0;
             }
         }
 
@@ -1220,7 +1220,7 @@ const onDragHandleMouseDown = (e: MouseEvent) => {
         }
 
         .menu_top {
-            margin-right: 0;
+            margin-inline-end: 0;
             padding-right: 0;
         }
     }
@@ -1282,7 +1282,7 @@ const onDragHandleMouseDown = (e: MouseEvent) => {
         }
 
         .lite-badge {
-            margin-left: 2px;
+            margin-inline-start: 2px;
             align-self: flex-start;
             margin-top: 2px;
             font-size: 9px;
@@ -1294,10 +1294,10 @@ const onDragHandleMouseDown = (e: MouseEvent) => {
     }
 
     .logo_img {
-        margin-left: 24px;
+        margin-inline-start: 24px;
         width: 30px;
         height: 30px;
-        margin-right: 7.25px;
+        margin-inline-end: 7.25px;
     }
 
     .logo_txt {
@@ -1319,7 +1319,7 @@ const onDragHandleMouseDown = (e: MouseEvent) => {
         min-height: 0;
         // 抵消 .aside_box 的右内边距，让滚动条贴近面板右缘；
         // 等量 padding 补回，保证列表文字位置不变。
-        margin-right: -4px;
+        margin-inline-end: -4px;
         padding-right: 4px;
 
         // Claude 风格细滚动条：默认透明，悬浮时显示一条圆角细灰条
@@ -1455,7 +1455,7 @@ const onDragHandleMouseDown = (e: MouseEvent) => {
         display: flex;
         flex: 0 0 var(--sidebar-icon-size);
         width: var(--sidebar-icon-size);
-        margin-right: var(--sidebar-icon-gap);
+        margin-inline-end: var(--sidebar-icon-gap);
         color: var(--td-text-color-secondary);
 
         .icon {
@@ -1491,7 +1491,7 @@ const onDragHandleMouseDown = (e: MouseEvent) => {
     :deep(.submenu_pin_icon) {
         color: inherit;
         font-size: 12px;
-        margin-right: 4px;
+        margin-inline-end: 4px;
         vertical-align: middle;
         flex-shrink: 0;
     }
@@ -1499,7 +1499,7 @@ const onDragHandleMouseDown = (e: MouseEvent) => {
     .submenu_source_icon {
         width: 14px;
         height: 14px;
-        margin-right: 0px;
+        margin-inline-end: 0px;
         vertical-align: middle;
         object-fit: contain;
         flex-shrink: 0;
@@ -1690,7 +1690,7 @@ const onDragHandleMouseDown = (e: MouseEvent) => {
         }
 
         .submenu_title--batch {
-            margin-left: 4px;
+            margin-inline-start: 4px;
         }
 
         &.submenu_item_batch {
@@ -1734,7 +1734,7 @@ const onDragHandleMouseDown = (e: MouseEvent) => {
 
 /* 知识库下拉菜单样式 */
 .kb-dropdown-icon {
-    margin-left: auto;
+    margin-inline-start: auto;
     color: var(--td-text-color-secondary);
     transition: transform 0.3s ease, color 0.2s ease;
     cursor: pointer;
@@ -1877,7 +1877,7 @@ const onDragHandleMouseDown = (e: MouseEvent) => {
     min-width: 18px;
     height: 18px;
     padding: 0 5px;
-    margin-left: 6px;
+    margin-inline-start: 6px;
     border-radius: 9px;
     background: rgba(250, 173, 20, 0.2);
     color: var(--td-warning-color);

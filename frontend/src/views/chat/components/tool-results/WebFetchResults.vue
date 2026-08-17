@@ -328,7 +328,7 @@ const indexKey = (index: number, item: WebFetchResultItem): string => {
 .raw-length {
   font-size: 11px;
   color: var(--td-text-color-placeholder);
-  margin-left: 4px;
+  margin-inline-start: 4px;
   font-weight: normal;
 }
 

@@ -2034,7 +2034,7 @@ watch(addMemberPopupVisible, (visible) => {
 }
 
 .nav-icon {
-  margin-right: 9px;
+  margin-inline-end: 9px;
   font-size: 16px;
   flex-shrink: 0;
   display: flex;
@@ -2054,7 +2054,7 @@ watch(addMemberPopupVisible, (visible) => {
 
 .nav-badge {
   flex-shrink: 0;
-  margin-left: 2px;
+  margin-inline-start: 2px;
   padding: 0 6px;
   border-radius: 8px;
   background: var(--td-bg-color-secondarycontainer);
@@ -2207,7 +2207,7 @@ watch(addMemberPopupVisible, (visible) => {
 
       .required {
         color: var(--td-error-color);
-        margin-left: 2px;
+        margin-inline-start: 2px;
       }
     }
 
@@ -2896,7 +2896,7 @@ watch(addMemberPopupVisible, (visible) => {
       margin-bottom: 12px;
 
       .me-badge {
-        margin-left: auto;
+        margin-inline-start: auto;
         font-size: 12px;
         font-weight: 500;
         color: var(--td-brand-color);
@@ -3269,7 +3269,7 @@ watch(addMemberPopupVisible, (visible) => {
         margin-bottom: 6px;
 
         .me-badge {
-          margin-left: auto;
+          margin-inline-start: auto;
           font-size: 10px;
           font-weight: 500;
           color: var(--td-brand-color);

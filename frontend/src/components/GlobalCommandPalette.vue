@@ -837,7 +837,7 @@ onUnmounted(() => {
 
 .cmdk-msg-role {
   display: inline-block;
-  margin-right: 6px;
+  margin-inline-end: 6px;
   padding: 0 5px;
   font-size: 10px;
   font-weight: 600;

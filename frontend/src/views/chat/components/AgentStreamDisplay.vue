@@ -2955,7 +2955,7 @@ const handleAddToKnowledge = (answerEvent: any) => {
   position: relative;
   padding-left: 0;
   margin-top: 14px;
-  margin-left: 10px;
+  margin-inline-start: 10px;
   max-height: none;
   overflow-y: visible;
   border-left: 0;
@@ -3187,7 +3187,7 @@ const handleAddToKnowledge = (answerEvent: any) => {
 
   .action-show-icon {
     flex-shrink: 0;
-    margin-left: 2px;
+    margin-inline-start: 2px;
   }
 
   .action-name {
@@ -3459,7 +3459,7 @@ const handleAddToKnowledge = (answerEvent: any) => {
       strong {
         color: var(--td-text-color-secondary);
         font-weight: 400;
-        margin-right: 6px;
+        margin-inline-end: 6px;
       }
     }
   }

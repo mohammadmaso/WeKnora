@@ -281,7 +281,7 @@ const formatMetadataValue = (value: unknown) => {
 
   .metadata-key {
     font-weight: 600;
-    margin-right: 4px;
+    margin-inline-end: 4px;
     color: var(--td-text-color-secondary);
   }
 

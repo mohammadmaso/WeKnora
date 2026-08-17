@@ -283,7 +283,7 @@ const handleKBEditorSuccess = (kbId: string) => {
         border-radius: 6px;
         background: var(--td-bg-color-container);
         box-shadow: var(--td-shadow-1);
-        margin-right: 12px;
+        margin-inline-end: 12px;
 
         .logo_img {
             height: 24px;

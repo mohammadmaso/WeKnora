@@ -111,7 +111,7 @@ const formatFileSize = (bytes: number): string => {
   padding: 8px 12px;
   border-radius: 8px;
   background: var(--td-bg-color-secondarycontainer);
-  margin-left: auto;
+  margin-inline-start: auto;
   color: var(--td-text-color-primary);
   font-size: 16px;
   line-height: 1.6;

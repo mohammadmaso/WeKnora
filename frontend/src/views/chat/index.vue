@@ -1252,7 +1252,7 @@ onBeforeRouteUpdate((to, from, next) => {
     .botanswer_laoding_gif {
         width: 24px;
         height: 18px;
-        margin-left: 16px;
+        margin-inline-start: 16px;
     }
 
     .chat-global-wait {

@@ -1630,7 +1630,7 @@ defineExpose({
   border-radius: 4px;
   font-size: 12px;
   color: var(--td-brand-color);
-  margin-left: 6px;
+  margin-inline-start: 6px;
 }
 
 .header {
@@ -1892,7 +1892,7 @@ defineExpose({
   }
 
   .agent-section-toggle {
-    margin-left: 4px;
+    margin-inline-start: 4px;
     opacity: 0.7;
     transition: opacity 0.15s ease;
   }
@@ -1900,13 +1900,13 @@ defineExpose({
   // 共享给我的两个子分组：主图标 usergroup-add 表达"共享"语义，
   // 子图标 (edit / browse) 紧挨主图标用来区分权限。
   .agent-section-subicon {
-    margin-left: -4px;
+    margin-inline-start: -4px;
     opacity: 0.75;
   }
 
   // 与 KB 列表口径一致：组里的卡片数量徽标。
   .agent-section-count {
-    margin-left: 2px;
+    margin-inline-start: 2px;
     padding: 0 6px;
     border-radius: 8px;
     background: var(--td-bg-color-secondarycontainer);
@@ -2463,7 +2463,7 @@ defineExpose({
   .circle-img {
     width: 20px;
     height: 20px;
-    margin-right: 8px;
+    margin-inline-end: 8px;
   }
 
   .circle-title {
@@ -2481,7 +2481,7 @@ defineExpose({
     font-weight: 400;
     line-height: 22px;
     display: inline-block;
-    margin-left: 29px;
+    margin-inline-start: 29px;
     margin-bottom: 21px;
   }
 
@@ -2507,7 +2507,7 @@ defineExpose({
 
   .confirm {
     color: var(--td-error-color);
-    margin-left: 40px;
+    margin-inline-start: 40px;
 
     &:hover {
       opacity: 0.8;

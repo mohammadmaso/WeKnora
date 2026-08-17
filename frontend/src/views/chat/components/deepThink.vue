@@ -121,7 +121,7 @@ const toggleFold = () => {
                 position: relative;
                 width: 16px;
                 height: 16px;
-                margin-right: 8px;
+                margin-inline-end: 8px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -158,7 +158,7 @@ const toggleFold = () => {
             .done-icon {
                 width: 16px;
                 height: 16px;
-                margin-right: 8px;
+                margin-inline-end: 8px;
             }
 
             .done-text {

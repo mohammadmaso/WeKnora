@@ -678,7 +678,7 @@ onBeforeUnmount(() => {
   position: relative;
   padding-left: 0;
   margin-top: 0;
-  margin-left: 10px;
+  margin-inline-start: 10px;
 }
 
 .tree-children-expanded {
@@ -756,7 +756,7 @@ onBeforeUnmount(() => {
 
     .action-show-icon {
       flex-shrink: 0;
-      margin-left: 2px;
+      margin-inline-start: 2px;
     }
   }
 

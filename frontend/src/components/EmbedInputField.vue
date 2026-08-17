@@ -332,7 +332,7 @@ onUnmounted(() => {
   }
 
   &__actions {
-    margin-left: auto;
+    margin-inline-start: auto;
     display: flex;
     align-items: center;
   }

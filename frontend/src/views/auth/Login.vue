@@ -1276,7 +1276,7 @@ onMounted(async () => {
     }
 
     svg:last-child {
-      margin-left: 2px;
+      margin-inline-start: 2px;
       flex-shrink: 0;
     }
   }
@@ -1588,7 +1588,7 @@ onMounted(async () => {
   .link-button {
     color: var(--td-brand-color);
     text-decoration: none;
-    margin-left: 4px;
+    margin-inline-start: 4px;
     font-weight: 500;
     transition: all 0.2s;
 
@@ -1632,7 +1632,7 @@ onMounted(async () => {
       justify-content: center;
       font-size: 12px;
       font-weight: 700;
-      margin-right: 10px;
+      margin-inline-end: 10px;
       flex-shrink: 0;
     }
 

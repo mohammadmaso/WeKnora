@@ -69,7 +69,7 @@ const dismiss = () => {
   width: 100%;
   max-width: 720px;
   margin: -4px 0 28px;
-  margin-right: auto;
+  margin-inline-end: auto;
   padding: 12px;
   border: 1px solid var(--td-component-stroke);
   border-radius: 12px;

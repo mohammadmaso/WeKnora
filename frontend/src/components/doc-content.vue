@@ -2850,18 +2850,18 @@ const handleChunkPageChange = (pageInfo: { current: number }) => {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  margin-left: auto;
+  margin-inline-start: auto;
   color: var(--td-text-color-secondary);
   font-size: 11px;
 }
 
 .chunk-history-row-chevron {
-  margin-left: auto;
+  margin-inline-start: auto;
   color: var(--td-text-color-placeholder);
 }
 
 .chunk-history-status-change + .chunk-history-row-chevron {
-  margin-left: 0;
+  margin-inline-start: 0;
 }
 
 .chunk-history-diff {
@@ -3187,7 +3187,7 @@ const handleChunkPageChange = (pageInfo: { current: number }) => {
   top: 0;
   bottom: 0;
   width: 12px;
-  margin-left: -6px;
+  margin-inline-start: -6px;
   cursor: col-resize;
   z-index: 2001;
   display: flex;
@@ -3221,7 +3221,7 @@ const handleChunkPageChange = (pageInfo: { current: number }) => {
   top: 0;
   bottom: 0;
   width: 12px;
-  margin-left: -6px;
+  margin-inline-start: -6px;
   cursor: col-resize;
   z-index: 2101;
   display: flex;

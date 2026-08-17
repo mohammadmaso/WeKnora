@@ -1039,7 +1039,7 @@ onMounted(async () => {
   &.required::before {
     content: '*';
     color: var(--td-error-color);
-    margin-right: 4px;
+    margin-inline-end: 4px;
     font-weight: 500;
     line-height: 1;
   }
@@ -1137,7 +1137,7 @@ onMounted(async () => {
   }
 
   &--inline {
-    margin-left: 6px;
+    margin-inline-start: 6px;
     font-size: 12px;
     font-weight: 500;
     vertical-align: baseline;

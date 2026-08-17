@@ -376,7 +376,7 @@ defineExpose({
     display: inline-block;
     width: 9px;
     height: 9px;
-    margin-right: 3px;
+    margin-inline-end: 3px;
     border: 1px solid currentColor;
     border-right-color: transparent;
     border-radius: 50%;

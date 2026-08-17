@@ -1825,7 +1825,7 @@ watch(
       margin-bottom: 12px;
 
       .me-badge {
-        margin-left: auto;
+        margin-inline-start: auto;
         font-size: 12px;
         font-weight: 500;
         color: var(--td-brand-color);
@@ -2259,7 +2259,7 @@ watch(
     display: inline-block;
     font-weight: 600;
     color: var(--td-text-color-primary);
-    margin-right: 4px;
+    margin-inline-end: 4px;
   }
 }
 
@@ -2399,7 +2399,7 @@ watch(
         margin-bottom: 6px;
 
         .me-badge {
-          margin-left: auto;
+          margin-inline-start: auto;
           font-size: 10px;
           font-weight: 500;
           color: var(--td-brand-color);

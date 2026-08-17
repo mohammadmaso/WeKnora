@@ -457,7 +457,7 @@ onBeforeUnmount(() => {
     display: block;
     cursor: pointer;
     object-fit: contain;
-    margin: 8px 0 8px 16px;
+    margin-block-start: 8px; margin-inline-end: 0; margin-block-end: 8px; margin-inline-start: 16px;
     border: 0.5px solid var(--td-component-stroke);
     transition: transform 0.2s ease;
 
@@ -472,7 +472,7 @@ onBeforeUnmount(() => {
     color: var(--td-text-color-primary);
     font-size: 16px;
     // padding: 10px 12px;
-    margin-right: auto;
+    margin-inline-end: auto;
     max-width: 100%;
     box-sizing: border-box;
 }
@@ -480,7 +480,7 @@ onBeforeUnmount(() => {
 .botanswer_laoding_gif {
     width: 24px;
     height: 18px;
-    margin-left: 16px;
+    margin-inline-start: 16px;
 }
 
 .img_loading {
@@ -494,7 +494,7 @@ onBeforeUnmount(() => {
     flex-direction: column;
     font-size: 12px;
     gap: 4px;
-    margin-left: 16px;
+    margin-inline-start: 16px;
     border-radius: 8px;
 }
 

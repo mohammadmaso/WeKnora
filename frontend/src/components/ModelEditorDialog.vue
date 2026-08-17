@@ -1724,7 +1724,7 @@ const handleCancel = () => {
   &.required::before {
     content: '*';
     color: var(--td-error-color);
-    margin-right: 4px;
+    margin-inline-end: 4px;
     font-weight: 500;
     line-height: 1;
   }
@@ -2036,7 +2036,7 @@ const handleCancel = () => {
   .model-size {
     font-size: 12px;
     color: var(--td-text-color-placeholder);
-    margin-left: auto;
+    margin-inline-start: auto;
   }
 
   &.download {
@@ -2241,7 +2241,7 @@ const handleCancel = () => {
     color: var(--td-error-color);
     font-size: 16px;
     flex-shrink: 0;
-    margin-right: 2px;
+    margin-inline-end: 2px;
 
     &.info {
       color: var(--td-brand-color);

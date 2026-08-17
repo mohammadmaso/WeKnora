@@ -109,6 +109,6 @@ const displayName = computed(() => {
 }
 
 .vs-badge-warn-tag {
-  margin-left: 4px;
+  margin-inline-start: 4px;
 }
 </style>

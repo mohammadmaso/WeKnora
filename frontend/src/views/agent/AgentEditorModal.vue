@@ -1475,7 +1475,7 @@
                           :placeholder="$t('agent.editor.webSearchProviderPlaceholder')" style="width: 240px;">
                           <t-option v-for="p in webSearchProviderList" :key="p.id" :value="p.id" :label="p.name">
                             <span>{{ p.name }}</span>
-                            <t-tag v-if="p.is_default" theme="primary" size="small" style="margin-left: 6px;">{{
+                            <t-tag v-if="p.is_default" theme="primary" size="small" style="margin-inline-start: 6px;">{{
                               $t('common.default')
                               }}</t-tag>
                           </t-option>
@@ -4504,7 +4504,7 @@ const handleSave = async () => {
 }
 
 .nav-icon {
-  margin-right: 9px;
+  margin-inline-end: 9px;
   font-size: 16px;
   flex-shrink: 0;
   display: flex;
@@ -4519,7 +4519,7 @@ const handleSave = async () => {
 
 .nav-badge {
   flex-shrink: 0;
-  margin-left: 2px;
+  margin-inline-start: 2px;
   padding: 0 6px;
   border-radius: 8px;
   background: var(--td-bg-color-secondarycontainer);
@@ -4700,7 +4700,7 @@ const handleSave = async () => {
     line-height: 1.5;
 
     .doc-link {
-      margin-left: 8px;
+      margin-inline-start: 8px;
     }
   }
 }
@@ -4831,7 +4831,7 @@ const handleSave = async () => {
 
     .required {
       color: var(--td-error-color);
-      margin-left: 2px;
+      margin-inline-start: 2px;
     }
   }
 
@@ -4928,7 +4928,7 @@ const handleSave = async () => {
     display: inline-flex;
     align-items: center;
     gap: 2px;
-    margin-left: 4px;
+    margin-inline-start: 4px;
     padding: 0;
     border: none;
     background: transparent;
@@ -5027,7 +5027,7 @@ const handleSave = async () => {
 
 .settings-footer-note {
   margin: 0;
-  margin-right: auto;
+  margin-inline-end: auto;
   flex: 1;
   min-width: 0;
   display: flex;
@@ -5038,7 +5038,7 @@ const handleSave = async () => {
   color: var(--td-text-color-secondary);
 
   strong {
-    margin-right: 4px;
+    margin-inline-end: 4px;
     color: var(--td-text-color-primary);
     font-weight: 500;
   }
@@ -5339,7 +5339,7 @@ const handleSave = async () => {
   }
 
   .tool-group-warning {
-    margin-left: auto;
+    margin-inline-start: auto;
     display: inline-flex;
     align-items: center;
     gap: 4px;
@@ -5548,7 +5548,7 @@ const handleSave = async () => {
   &::before {
     content: "· ";
     color: var(--td-text-color-placeholder);
-    margin-right: 2px;
+    margin-inline-end: 2px;
   }
 }
 

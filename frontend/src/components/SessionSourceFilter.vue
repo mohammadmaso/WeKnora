@@ -328,7 +328,7 @@ onBeforeUnmount(() => {
 .session-source-filter__check {
   flex: 0 0 13px;
   width: 13px;
-  margin-left: 2px;
+  margin-inline-start: 2px;
   color: var(--td-text-color-placeholder);
   font-size: 12px !important;
   visibility: hidden;

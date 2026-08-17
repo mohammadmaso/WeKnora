@@ -1874,7 +1874,7 @@ const handleUploadFinishedEvent = (event: Event) => {
   border-radius: 4px;
   font-size: 12px;
   color: var(--td-brand-color);
-  margin-left: 6px;
+  margin-inline-start: 6px;
 }
 
 .header-subtitle {
@@ -2252,7 +2252,7 @@ const handleUploadFinishedEvent = (event: Event) => {
   }
 
   .kb-section-toggle {
-    margin-left: 4px;
+    margin-inline-start: 4px;
     opacity: 0.7;
     transition: opacity 0.15s ease;
   }
@@ -2260,14 +2260,14 @@ const handleUploadFinishedEvent = (event: Event) => {
   // 共享给我的两个子分组共用一个主图标 usergroup-add，再用子图标
   // (edit / browse) 区分权限。子图标向左挤靠主图标，整体读起来还是一个"组"。
   .kb-section-subicon {
-    margin-left: -4px;
+    margin-inline-start: -4px;
     opacity: 0.75;
   }
 
   // 组里实际有多少张卡片。用 13px 主字号同色降透明度，避免抢标题视觉，
   // 同时给个轻底色保证在浅色容器上仍可读。
   .kb-section-count {
-    margin-left: 2px;
+    margin-inline-start: 2px;
     padding: 0 6px;
     border-radius: 8px;
     background: var(--td-bg-color-secondarycontainer);
@@ -2871,7 +2871,7 @@ const handleUploadFinishedEvent = (event: Event) => {
   .circle-img {
     width: 20px;
     height: 20px;
-    margin-right: 8px;
+    margin-inline-end: 8px;
   }
 
   .circle-title {
@@ -2889,7 +2889,7 @@ const handleUploadFinishedEvent = (event: Event) => {
     font-weight: 400;
     line-height: 22px;
     display: inline-block;
-    margin-left: 29px;
+    margin-inline-start: 29px;
     margin-bottom: 21px;
   }
 
@@ -2915,7 +2915,7 @@ const handleUploadFinishedEvent = (event: Event) => {
 
   .confirm {
     color: var(--td-error-color);
-    margin-left: 40px;
+    margin-inline-start: 40px;
 
     &:hover {
       opacity: 0.8;

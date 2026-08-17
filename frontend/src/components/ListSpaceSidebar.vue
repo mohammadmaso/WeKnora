@@ -305,7 +305,7 @@ onBeforeUnmount(() => {
 
   &.expanded {
     width: 208px;
-    margin-right: 0;
+    margin-inline-end: 0;
   }
 
   &.dragging {
@@ -491,7 +491,7 @@ onBeforeUnmount(() => {
     padding: 2px 7px;
     border-radius: 8px;
     background: var(--td-bg-color-secondarycontainer);
-    margin-left: 6px;
+    margin-inline-start: 6px;
     flex-shrink: 0;
     transition: all 0.15s ease;
   }

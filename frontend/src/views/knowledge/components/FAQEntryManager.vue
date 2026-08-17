@@ -3066,7 +3066,7 @@ watch(() => entries.value.map(e => ({
     display: flex;
     align-items: center;
     gap: 4px;
-    margin-left: auto;
+    margin-inline-start: auto;
 
     :deep(.content-bar-icon-btn) {
       color: var(--td-text-color-secondary);
@@ -3092,7 +3092,7 @@ watch(() => entries.value.map(e => ({
 
     &__trailing {
       flex: 0 0 auto;
-      margin-left: auto;
+      margin-inline-start: auto;
     }
   }
 
@@ -3136,7 +3136,7 @@ watch(() => entries.value.map(e => ({
       flex-shrink: 0;
       display: inline-flex;
       align-items: center;
-      margin-right: var(--td-comp-margin-s);
+      margin-inline-end: var(--td-comp-margin-s);
       color: var(--td-text-color-placeholder);
     }
 
@@ -3153,7 +3153,7 @@ watch(() => entries.value.map(e => ({
       flex-shrink: 0;
       display: inline-flex;
       align-items: center;
-      margin-left: var(--td-comp-margin-s);
+      margin-inline-start: var(--td-comp-margin-s);
     }
 
     &__caret {
@@ -3185,7 +3185,7 @@ watch(() => entries.value.map(e => ({
   }
 
   :deep(.t-input__prefix-icon) {
-    margin-right: 0;
+    margin-inline-end: 0;
   }
 }
 
@@ -3206,7 +3206,7 @@ watch(() => entries.value.map(e => ({
   font-weight: 400;
 
   .menu-icon {
-    margin-right: 8px;
+    margin-inline-end: 8px;
     font-size: 16px;
   }
 
@@ -3720,7 +3720,7 @@ watch(() => entries.value.map(e => ({
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-left: auto;
+  margin-inline-start: auto;
   flex-shrink: 0;
 }
 
@@ -3772,7 +3772,7 @@ watch(() => entries.value.map(e => ({
   align-items: center;
   gap: 5px;
   flex-shrink: 0;
-  margin-left: auto;
+  margin-inline-start: auto;
 }
 
 .status-item {
@@ -3974,8 +3974,8 @@ watch(() => entries.value.map(e => ({
         background: var(--td-bg-color-container);
         padding-left: 4px;
         padding-right: 4px;
-        margin-left: -4px;
-        margin-right: -4px;
+        margin-inline-start: -4px;
+        margin-inline-end: -4px;
       }
     }
 
@@ -3983,13 +3983,13 @@ watch(() => entries.value.map(e => ({
       font-size: 13px;
       color: var(--td-text-color-placeholder);
       flex-shrink: 0;
-      margin-left: auto; // 让箭头靠右对齐
+      margin-inline-start: auto; // 让箭头靠右对齐
     }
 
     .section-count {
       color: var(--td-text-color-placeholder);
       font-weight: 400;
-      margin-left: 4px;
+      margin-inline-start: 4px;
     }
   }
 
@@ -4315,7 +4315,7 @@ watch(() => entries.value.map(e => ({
   &.required::after {
     content: '*';
     color: var(--td-error-color);
-    margin-left: 4px;
+    margin-inline-start: 4px;
     font-weight: 600;
   }
 }
@@ -4769,7 +4769,7 @@ watch(() => entries.value.map(e => ({
   }
 
   :deep(.t-form__controls) {
-    margin-left: 0 !important;
+    margin-inline-start: 0 !important;
     width: 100% !important;
   }
 
@@ -5150,7 +5150,7 @@ watch(() => entries.value.map(e => ({
   }
 
   :deep(.t-form__controls) {
-    margin-left: 0 !important;
+    margin-inline-start: 0 !important;
     width: 100% !important;
   }
 
@@ -5269,8 +5269,8 @@ watch(() => entries.value.map(e => ({
   align-items: center;
   gap: 8px;
   margin-bottom: 16px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   padding-left: 0;
   font-family: var(--app-font-family);
   font-size: 14px;
@@ -5345,8 +5345,8 @@ watch(() => entries.value.map(e => ({
   margin-bottom: 12px;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--td-component-stroke);
-  margin-left: -4px;
-  margin-right: -4px;
+  margin-inline-start: -4px;
+  margin-inline-end: -4px;
   padding-left: 4px;
   padding-right: 4px;
 }
@@ -5412,7 +5412,7 @@ watch(() => entries.value.map(e => ({
   gap: 8px;
   flex-wrap: wrap;
   flex-shrink: 0;
-  margin-left: auto;
+  margin-inline-start: auto;
 }
 
 .expand-icon {

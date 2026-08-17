@@ -1866,7 +1866,7 @@ const handleConfirm = () => {
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  margin-right: 8px;
+  margin-inline-end: 8px;
   margin-top: 2px;
   font-size: 16px;
   color: inherit;
@@ -1914,7 +1914,7 @@ const handleConfirm = () => {
   flex-shrink: 0;
   width: 6px;
   height: 6px;
-  margin-left: 6px;
+  margin-inline-start: 6px;
   border-radius: 50%;
   background: var(--td-error-color);
 }
@@ -2100,7 +2100,7 @@ const handleConfirm = () => {
 }
 
 .required {
-  margin-left: 2px;
+  margin-inline-start: 2px;
   font-weight: 500;
   color: var(--td-error-color);
 }

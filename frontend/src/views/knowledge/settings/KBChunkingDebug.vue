@@ -424,7 +424,7 @@ const tierTheme = (tier: StrategyTier) => {
   .presets-label {
     font-size: 12px;
     color: var(--td-text-color-placeholder);
-    margin-right: 4px;
+    margin-inline-end: 4px;
   }
 
   .preset-chip {
@@ -568,7 +568,7 @@ const tierTheme = (tier: StrategyTier) => {
   font-variant-numeric: tabular-nums;
 
   .stats-count strong {
-    margin-right: 4px;
+    margin-inline-end: 4px;
     color: var(--td-text-color-primary);
     font-size: 14px;
     font-weight: 600;
@@ -580,7 +580,7 @@ const tierTheme = (tier: StrategyTier) => {
 }
 
 .truncation-hint {
-  margin-left: auto;
+  margin-inline-start: auto;
   color: var(--td-warning-color);
   font-size: 12px;
 }
@@ -672,7 +672,7 @@ const tierTheme = (tier: StrategyTier) => {
 }
 
 .chunk-toggle {
-  margin-left: auto;
+  margin-inline-start: auto;
   flex-shrink: 0;
   font-size: 16px;
   color: var(--td-text-color-secondary);

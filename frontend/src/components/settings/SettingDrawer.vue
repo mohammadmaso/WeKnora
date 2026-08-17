@@ -443,7 +443,7 @@ const handleCancel = () => {
   top: 0;
   bottom: 0;
   width: 12px;
-  margin-left: -6px;
+  margin-inline-start: -6px;
   cursor: col-resize;
   z-index: 2501;
   display: flex;

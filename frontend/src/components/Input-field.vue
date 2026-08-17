@@ -2866,7 +2866,7 @@ const getImgSrc = (url: string) => {
   justify-content: center;
   width: 14px;
   height: 14px;
-  margin-left: 1px;
+  margin-inline-start: 1px;
   border-radius: 50%;
   font-size: 14px;
   line-height: 1;
@@ -3338,7 +3338,7 @@ const getImgSrc = (url: string) => {
 .dropdown-arrow {
   width: 10px;
   height: 10px;
-  margin-left: 2px;
+  margin-inline-start: 2px;
   transition: transform 0.12s;
 
   &.rotate {
@@ -3426,7 +3426,7 @@ const getImgSrc = (url: string) => {
 .model-display {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  margin-inline-start: auto;
   flex-shrink: 0;
 
   &.agent-controlled {
@@ -3732,13 +3732,13 @@ const getImgSrc = (url: string) => {
   height: 14px;
   color: var(--td-success-color);
   flex-shrink: 0;
-  margin-left: 6px;
+  margin-inline-start: 6px;
 }
 
 .agent-mode-warning {
   display: flex;
   align-items: center;
-  margin-left: 6px;
+  margin-inline-start: 6px;
 
   .warning-icon {
     color: var(--td-warning-color);

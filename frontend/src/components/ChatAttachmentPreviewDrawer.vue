@@ -208,7 +208,7 @@ onUnmounted(() => {
   top: 0;
   bottom: 0;
   width: 12px;
-  margin-left: -6px;
+  margin-inline-start: -6px;
   z-index: 2002;
   cursor: col-resize;
   display: flex;

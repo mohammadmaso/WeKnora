@@ -687,6 +687,6 @@ onMounted(reload)
 }
 
 .api-key-capability-item .scope-hint {
-  margin: 2px 0 0 24px;
+  margin-block-start: 2px; margin-inline-end: 0; margin-block-end: 0; margin-inline-start: 24px;
 }
 </style>

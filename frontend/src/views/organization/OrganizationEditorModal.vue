@@ -528,7 +528,7 @@ watch(() => props.mode, () => {
 }
 
 .nav-icon {
-  margin-right: 8px;
+  margin-inline-end: 8px;
   font-size: 18px;
   flex-shrink: 0;
 }
@@ -595,7 +595,7 @@ watch(() => props.mode, () => {
   &.required::after {
     content: '*';
     color: var(--td-error-color);
-    margin-left: 4px;
+    margin-inline-start: 4px;
   }
 }
 

@@ -140,7 +140,7 @@ const onHover = (e: MouseEvent) => {
 }
 
 .cmdk-item__score {
-  margin-left: auto;
+  margin-inline-start: auto;
   font-size: 11px;
   color: var(--td-text-color-placeholder);
   flex-shrink: 0;

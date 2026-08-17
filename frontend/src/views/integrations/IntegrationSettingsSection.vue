@@ -112,7 +112,7 @@ watch(
   display: inline-flex;
   align-items: center;
   gap: 3px;
-  margin-left: 6px;
+  margin-inline-start: 6px;
   color: var(--td-brand-color);
   text-decoration: none;
 

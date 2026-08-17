@@ -301,7 +301,7 @@ async function handleDownload(item: ArtifactMeta) {
     }
 
     .artifact-download-label {
-        margin-left: 4px;
+        margin-inline-start: 4px;
     }
 }
 </style>

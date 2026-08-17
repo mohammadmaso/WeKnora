@@ -803,7 +803,7 @@ const handleAction = (action: 'download' | 'edit' | 'view-trace' | 'reparse' | '
     justify-content: center;
     width: 22px;
     height: 29px;
-    margin-right: 8px;
+    margin-inline-end: 8px;
     cursor: pointer;
 
     .card-select-checkbox {
@@ -843,7 +843,7 @@ const handleAction = (action: 'download' | 'edit' | 'view-trace' | 'reparse' | '
     color: var(--td-brand-color);
     font-family: var(--app-font-family);
     font-size: 11px;
-    margin-left: 8px;
+    margin-inline-start: 8px;
   }
 
   .card-analyze-trace {
@@ -902,7 +902,7 @@ const handleAction = (action: 'download' | 'edit' | 'view-trace' | 'reparse' | '
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.01em;
-    margin-right: 8px;
+    margin-inline-end: 8px;
   }
 
   .more-wrap {

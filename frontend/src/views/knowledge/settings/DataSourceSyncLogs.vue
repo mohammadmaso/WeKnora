@@ -491,7 +491,7 @@ const groupedLogs = computed(() => {
 }
 
 .tl-duration {
-  margin-left: auto;
+  margin-inline-start: auto;
   font-size: 11px;
   font-weight: 500;
   color: var(--td-text-color-placeholder);

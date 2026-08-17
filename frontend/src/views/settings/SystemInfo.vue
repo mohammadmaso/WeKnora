@@ -36,7 +36,7 @@
                 :theme="systemInfo.edition === 'lite' ? 'primary' : 'default'"
                 variant="light"
                 size="small"
-                style="margin-left: 8px;"
+                style="margin-inline-start: 8px;"
               >{{ systemInfo.edition === 'lite' ? 'Lite' : 'Standard' }}</t-tag>
               <span v-if="systemInfo?.commit_id" class="commit-info">
                 ({{ systemInfo.commit_id }})
@@ -59,7 +59,7 @@
               theme="warning"
               variant="light"
               size="small"
-              style="margin-left: 8px;"
+              style="margin-inline-start: 8px;"
             >{{ $t('system.versionMismatch') }}</t-tag>
             <span v-if="frontendCommit && frontendCommit !== 'unknown'" class="commit-info">
               ({{ frontendCommit }})
@@ -126,7 +126,7 @@
               theme="danger"
               variant="light"
               size="small"
-              style="margin-left: 8px;"
+              style="margin-inline-start: 8px;"
             >{{ $t('system.dbMigrationFailedTag') }}</t-tag>
           </span>
         </div>
@@ -443,7 +443,7 @@ onUnmounted(() => {
     .commit-info {
       color: var(--td-text-color-placeholder);
       font-size: 12px;
-      margin-left: 6px;
+      margin-inline-start: 6px;
     }
   }
 }

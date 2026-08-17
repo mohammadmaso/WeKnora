@@ -832,7 +832,7 @@ const handleAction = (action: 'download' | 'edit' | 'reparse' | 'cancel-parse' |
 }
 
 .row-status-tag :deep(.t-icon) {
-  margin-right: 2px;
+  margin-inline-end: 2px;
 }
 
 .icon-spin {

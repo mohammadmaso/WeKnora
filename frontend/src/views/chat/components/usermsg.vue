@@ -222,7 +222,7 @@ const closePreImg = () => {
     flex: 1 0 0;
     border-radius: 8px;
     background: var(--td-bg-color-secondarycontainer);
-    margin-left: auto;
+    margin-inline-start: auto;
     color: var(--td-text-color-primary);
     font-size: 16px;
     line-height: 1.6;

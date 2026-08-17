@@ -159,7 +159,7 @@ const blocks = computed(() => {
   }
 
   .popup-footer__key {
-    margin-right: 4px;
+    margin-inline-end: 4px;
     font-family: inherit;
     color: var(--td-text-color-disabled);
   }

@@ -140,13 +140,13 @@
                   graphDrawerPage.version
               }) }}</span>
               <t-button v-if="graphMode === 'ego' && graphCenter !== graphDrawerPage.slug" size="small"
-                variant="outline" theme="default" style="margin-left: auto;" :disabled="!graphDrawerCanBloom"
+                variant="outline" theme="default" style="margin-inline-start: auto;" :disabled="!graphDrawerCanBloom"
                 @click="loadBloomNeighbors(graphDrawerPage.slug)">
                 {{ $t('knowledgeEditor.wikiBrowser.bloomNeighbors') }}
               </t-button>
               <t-button v-if="graphMode !== 'ego' || graphCenter !== graphDrawerPage.slug" size="small"
                 variant="outline" theme="primary"
-                :style="graphMode === 'ego' && graphCenter !== graphDrawerPage.slug ? '' : 'margin-left: auto;'"
+                :style="graphMode === 'ego' && graphCenter !== graphDrawerPage.slug ? '' : 'margin-inline-start: auto;'"
                 @click="loadEgoGraph(graphDrawerPage.slug)">
                 {{ $t('knowledgeEditor.wikiBrowser.expandNeighbors') }}
               </t-button>
@@ -458,8 +458,8 @@
                                     </span>
                                     <div v-if="props.canEdit" class="wiki-issue-popup-actions">
                                       <span class="wiki-issue-popup-action" @click="triggerFixIssue(issue)"
-                                        style="margin-right: 12px; font-weight: 500;">
-                                        <t-icon name="tools" style="margin-right: 4px;" />{{
+                                        style="margin-inline-end: 12px; font-weight: 500;">
+                                        <t-icon name="tools" style="margin-inline-end: 4px;" />{{
                                           $t('knowledgeEditor.wikiBrowser.issueFixSingle') }}
                                       </span>
                                       <span class="wiki-issue-popup-action"
@@ -701,8 +701,8 @@
               </span>
               <div class="wiki-issue-popup-actions">
                 <span class="wiki-issue-popup-action" @click="navigateToSlugAndFix(issue.slug)"
-                  style="margin-right: 12px; font-weight: 500;">
-                  <t-icon name="arrow-right-circle" style="margin-right: 4px;" />{{
+                  style="margin-inline-end: 12px; font-weight: 500;">
+                  <t-icon name="arrow-right-circle" style="margin-inline-end: 4px;" />{{
                     $t('knowledgeEditor.wikiBrowser.issueGoFix') }}
                 </span>
                 <span class="wiki-issue-popup-action" style="color: var(--td-text-color-placeholder);"
@@ -4901,7 +4901,7 @@ onUnmounted(() => {
 
 .wiki-sidebar-header {
   padding: 0 10px 8px 0;
-  margin-left: -8px;
+  margin-inline-start: -8px;
   padding-left: 8px;
   display: flex;
   flex-direction: column;
@@ -4949,7 +4949,7 @@ onUnmounted(() => {
   flex: 1;
   overflow-y: auto;
   padding: 0 8px 12px 0;
-  margin-left: -8px;
+  margin-inline-start: -8px;
   padding-left: 8px;
 }
 
@@ -5070,7 +5070,7 @@ onUnmounted(() => {
   align-items: center;
   justify-content: flex-end;
   gap: 2px;
-  margin-left: auto;
+  margin-inline-start: auto;
   flex-shrink: 0;
 }
 
@@ -5546,7 +5546,7 @@ onUnmounted(() => {
   color: var(--td-text-color-secondary);
   text-decoration: none;
   padding: 4px 8px;
-  margin-left: -8px;
+  margin-inline-start: -8px;
   border-radius: 4px;
   transition: all 0.15s;
 
@@ -6413,7 +6413,7 @@ onUnmounted(() => {
 
 // ── Issues Popup ──
 .wiki-issue-trigger {
-  margin-left: 8px;
+  margin-inline-start: 8px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -6452,7 +6452,7 @@ onUnmounted(() => {
 
   .wiki-issue-popup-icon {
     color: var(--td-brand-color);
-    margin-right: 8px;
+    margin-inline-end: 8px;
     font-size: 16px;
   }
 }

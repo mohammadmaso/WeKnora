@@ -1710,7 +1710,7 @@ watch(
 }
 
 .nav-icon {
-  margin-right: 9px;
+  margin-inline-end: 9px;
   font-size: 16px;
   flex-shrink: 0;
   display: flex;
@@ -1725,7 +1725,7 @@ watch(
 
 .nav-badge {
   flex-shrink: 0;
-  margin-left: 2px;
+  margin-inline-start: 2px;
   padding: 0 6px;
   border-radius: 8px;
   background: var(--td-bg-color-secondarycontainer);
@@ -1802,7 +1802,7 @@ watch(
   &.required::after {
     content: '*';
     color: var(--td-error-color);
-    margin-left: 4px;
+    margin-inline-start: 4px;
   }
 }
 
@@ -1969,7 +1969,7 @@ watch(
 
 .settings-footer-note {
   margin: 0;
-  margin-right: auto;
+  margin-inline-end: auto;
   flex: 1;
   min-width: 0;
   display: flex;
@@ -1980,7 +1980,7 @@ watch(
   color: var(--td-text-color-secondary);
 
   strong {
-    margin-right: 4px;
+    margin-inline-end: 4px;
     color: var(--td-text-color-primary);
     font-weight: 500;
   }
@@ -2084,7 +2084,7 @@ watch(
 
   .required {
     color: var(--td-error-color);
-    margin-left: 2px;
+    margin-inline-start: 2px;
     font-weight: 500;
   }
 }

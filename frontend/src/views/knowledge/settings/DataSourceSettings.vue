@@ -588,7 +588,7 @@ onBeforeUnmount(stopPolling)
     display: flex;
     align-items: center;
     gap: 2px;
-    margin-left: auto;
+    margin-inline-start: auto;
   }
 
   &__action-btn {

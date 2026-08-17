@@ -786,7 +786,7 @@ const scrollToItem = (index: number) => {
 }
 
 .count {
-  margin-left: auto;
+  margin-inline-start: auto;
   flex-shrink: 0;
   font-size: var(--td-font-size-mark-small, 12px);
   font-variant-numeric: tabular-nums;
@@ -922,7 +922,7 @@ const scrollToItem = (index: number) => {
   flex-shrink: 0;
   font-size: 14px;
   color: var(--td-text-color-placeholder, #999);
-  margin-right: 2px;
+  margin-inline-end: 2px;
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
@@ -935,7 +935,7 @@ const scrollToItem = (index: number) => {
   flex-shrink: 0;
   width: 14px;
   height: 14px;
-  margin-right: 2px;
+  margin-inline-end: 2px;
   color: var(--td-text-color-placeholder, #000000);
   opacity: 0.7;
   display: inline-block;

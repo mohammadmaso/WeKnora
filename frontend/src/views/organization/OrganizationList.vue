@@ -1119,7 +1119,7 @@ onUnmounted(() => {
 
 <style scoped lang="less">
 .org-list-container {
-  margin: 0 16px 0 0;
+  margin-block-start: 0; margin-inline-end: 16px; margin-block-end: 0; margin-inline-start: 0;
   height: 100%;
   box-sizing: border-box;
   flex: 1;
@@ -1365,13 +1365,13 @@ onUnmounted(() => {
   }
 
   .org-section-toggle {
-    margin-left: 4px;
+    margin-inline-start: 4px;
     opacity: 0.7;
     transition: opacity 0.15s ease;
   }
 
   .org-section-count {
-    margin-left: 2px;
+    margin-inline-start: 2px;
     padding: 0 6px;
     border-radius: 8px;
     background: var(--td-bg-color-secondarycontainer);
@@ -1873,7 +1873,7 @@ onUnmounted(() => {
   .circle-img {
     width: 20px;
     height: 20px;
-    margin-right: 8px;
+    margin-inline-end: 8px;
   }
 
   .circle-title {
@@ -1891,7 +1891,7 @@ onUnmounted(() => {
     font-weight: 400;
     line-height: 22px;
     display: inline-block;
-    margin-left: 29px;
+    margin-inline-start: 29px;
     margin-bottom: 21px;
   }
 
@@ -1917,7 +1917,7 @@ onUnmounted(() => {
 
   .confirm {
     color: var(--td-error-color);
-    margin-left: 40px;
+    margin-inline-start: 40px;
 
     &:hover {
       opacity: 0.8;

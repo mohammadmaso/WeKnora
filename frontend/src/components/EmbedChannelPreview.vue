@@ -165,7 +165,7 @@ watch(() => props.visible, async (open) => {
 
   &__url {
     flex: 1;
-    margin-left: 8px;
+    margin-inline-start: 8px;
     padding: 4px 10px;
     border-radius: 6px;
     font-size: 12px;

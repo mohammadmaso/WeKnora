@@ -775,7 +775,7 @@ onUnmounted(() => {
   .dropdown-user-avatar {
     width: 24px;
     height: 24px;
-    margin-left: -4px;
+    margin-inline-start: -4px;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
